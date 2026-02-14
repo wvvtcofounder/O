@@ -1,12 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(gh repo view:*)",
-      "Bash(git --version:*)",
-      "Bash(gh.exe repo view:*)",
-      "Bash(\"/c/Users/Owner/AppData/Local/GitHubDesktop/bin/github.bat\")",
-      "Bash(git config:*)",
-      "Bash(git ls-remote:*)"
+      "Bash(*)",
+      "Read(*)",
+      "Write(*)",
+      "Edit(*)",
+      "Glob(*)",
+      "Grep(*)"
     ]
-  }
+  },
+  "statusLine": true
 }
