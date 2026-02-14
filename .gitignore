@@ -6,6 +6,6 @@ Thumbs.db
 .DS_Store
 
 # Obsidian local state
-CONTENT/.obsidian/workspace.json
-CONTENT/.obsidian/workspace-mobile.json
-CONTENT/.obsidian/cache
+docs/.obsidian/workspace.json
+docs/.obsidian/workspace-mobile.json
+docs/.obsidian/cache

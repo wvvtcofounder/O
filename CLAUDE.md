@@ -1,7 +1,7 @@
 # Project O
 
 ## Structure
-- `CONTENT/` — All project content lives here. This is the payload folder.
+- `docs/` — All project content lives here. Obsidian vault + GitHub Pages source.
 - `sync.sh` — Single sync script. Run `bash sync.sh` for full sync, or `push`/`pull`/`status`.
 - `.gitignore` — Blocks `desktop.ini` and OS junk from ever entering the repo.
 
