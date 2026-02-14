@@ -4,3 +4,8 @@ Desktop.ini
 **/Desktop.ini
 Thumbs.db
 .DS_Store
+
+# Obsidian local state
+CONTENT/.obsidian/workspace.json
+CONTENT/.obsidian/workspace-mobile.json
+CONTENT/.obsidian/cache

@@ -1,0 +1,244 @@
+/* WVVT Brand Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+:root {
+  --evergreen: #165552;
+  --mist-blue: #ACCDD9;
+  --fire-orange: #D97757;
+  --cream: #FAF8F5;
+  --dark: #1a1a1a;
+  --text: #2c2c2c;
+  --text-light: #f0ece6;
+  --max-width: 740px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--cream);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- Header ---- */
+
+header {
+  background: var(--evergreen);
+  color: var(--text-light);
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header .brand {
+  font-family: 'Yeseva One', serif;
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+header .brand span {
+  color: var(--fire-orange);
+}
+
+nav {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--mist-blue);
+  text-decoration: none;
+  padding: 0.35rem 0.9rem;
+  border-radius: 100px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+
+/* ---- Main content ---- */
+
+main {
+  flex: 1;
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+/* ---- Typography ---- */
+
+h1, h2, h3, h4 {
+  font-family: 'Yeseva One', serif;
+  color: var(--evergreen);
+  line-height: 1.25;
+}
+
+h1 { font-size: 2.2rem; margin-bottom: 1rem; }
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 3px solid var(--fire-orange);
+  display: inline-block;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid var(--fire-orange);
+  display: inline-block;
+}
+
+p { margin-bottom: 1rem; }
+
+a { color: var(--evergreen); }
+a:hover { color: var(--fire-orange); }
+
+strong { font-weight: 700; }
+em { font-style: italic; }
+
+ul, ol {
+  margin: 0 0 1rem 1.5rem;
+}
+
+li { margin-bottom: 0.3rem; }
+
+blockquote {
+  border-left: 4px solid var(--fire-orange);
+  padding: 0.75rem 1.25rem;
+  margin: 1.5rem 0;
+  background: rgba(172, 205, 217, 0.15);
+  border-radius: 0 6px 6px 0;
+}
+
+code {
+  background: rgba(22, 85, 82, 0.08);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  background: var(--dark);
+  color: var(--text-light);
+  padding: 1.25rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--mist-blue);
+  margin: 2.5rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* ---- Buttons ---- */
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  border-radius: 100px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.btn-primary {
+  background: var(--evergreen);
+  color: #fff;
+  border: 2px solid var(--evergreen);
+}
+
+.btn-primary:hover {
+  background: #1a6b67;
+  border-color: #1a6b67;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--evergreen);
+  border: 2px solid var(--evergreen);
+}
+
+.btn-secondary:hover {
+  background: var(--evergreen);
+  color: #fff;
+}
+
+/* ---- Footer ---- */
+
+footer {
+  background: var(--evergreen);
+  color: var(--mist-blue);
+  text-align: center;
+  padding: 2rem 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+footer strong {
+  color: #fff;
+  font-family: 'Yeseva One', serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+footer .tagline {
+  color: var(--fire-orange);
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 600px) {
+  header { padding: 1rem; }
+  header .brand { font-size: 1.4rem; }
+  main { padding: 2rem 1rem 3rem; }
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.3rem; }
+}
